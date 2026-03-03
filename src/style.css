@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E5E7EB;
+  font-family: "Inter", sans-serif;
+}
+
+div.badge {
+  margin: 0;
+  padding: 0.125rem 0.75rem;
+  background-color: white;
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+div.badge-red {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+div.badge-pill {
+  border-radius: 0.75rem;
+}
