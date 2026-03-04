@@ -1,7 +1,8 @@
 import clsx from 'clsx';
 
 export default function Badge({children, color, shape}) {
-    const styles = clsx('badge',
+    const styles = clsx(
+        'badge',
         color==="gray" && 'gray',
         color==="red" && 'red',
         color==="yellow" && 'yellow',
@@ -13,6 +14,6 @@ export default function Badge({children, color, shape}) {
         shape==="pill" && 'badge-pill')
 
     return (
-        <div class={styles}>{children}</div>
+        <div className={styles}>{children}</div>
     )
 }
