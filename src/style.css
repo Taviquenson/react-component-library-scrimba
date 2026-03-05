@@ -29,6 +29,11 @@ h3 {
   color: #5E5D5D;
 }
 
+h2.section-title {
+  font-size: 2.75625rem;
+  margin-bottom: 0.5rem;
+}
+
 
 /***** Badges *****/
 section.badges {
@@ -39,7 +44,6 @@ section.badges {
 }
 
 h2.badges-section-title {
-  font-size: 2.75625rem;
   margin: 0 0 0 6rem;
 }
 
@@ -118,11 +122,6 @@ section.banners {
   margin-top: 3rem;
 }
 
-h2.banners-section-title {
-  font-size: 2.75625rem;
-  margin-bottom: 0.5rem;
-}
-
 div.banner {
   max-width: 56rem;
   margin: 0.5rem 0 1.5rem 0;
@@ -197,6 +196,29 @@ div.neutral > div.banner-content > span.title {
 div.neutral > div.banner-content > span.text {
   color: #1C51B9;
 }
-
-
 /***** Banners *****/
+
+
+/***** Card *****/
+section.card {
+  display: flex;
+  flex-direction: column;
+}
+
+div.card-icon-container {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg.card-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+/***** Card *****/

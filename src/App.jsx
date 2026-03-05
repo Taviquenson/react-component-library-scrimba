@@ -1,15 +1,16 @@
 import myPicture from '/picture-of-me.png'
 import Badge from '/components/Badge'
 import Banner from '/components/Banner'
+import Card from '/components/Card'
+import { MdOutlineCloudUpload } from "react-icons/md";
 
 
 function App() {
   return (
     <>
       <h1>React Library Components</h1>
-
       <section className="badges">
-        <h2 className="badges-section-title">Badges</h2>
+        <h2 className="badges-section-title section-title">Badges</h2>
         <div className="badges-table">
           <div className="badges-shape-square">
             <h3>Square</h3>
@@ -41,7 +42,7 @@ function App() {
       </section>
 
       <section className="banners">
-        <h2 className="banners-section-title">Banners</h2>
+        <h2 className="section-title">Banners</h2>
         <h3>Success</h3>
         <Banner
           status='success'
@@ -66,6 +67,17 @@ function App() {
           title='Update available'
           text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.'
         ></Banner>
+      </section>
+
+      <section className='card'>
+        <h2 className="section-title">Card</h2>
+        <h3>Place cursor on card to see hover effect!</h3>
+        <Card 
+          // jsxIcon={<MdOutlineCloudUpload className='card-icon' color='purple'/>}
+          // iconBackgroundColor='green'
+          title='Easy Deployment'
+          text='Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.'
+        ></Card>
       </section>
     </>
   )
