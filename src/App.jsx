@@ -2,7 +2,8 @@ import myPicture from '/picture-of-me.png'
 import Badge from '/components/Badge'
 import Banner from '/components/Banner'
 import Card from '/components/Card'
-import { MdOutlineCloudUpload } from "react-icons/md";
+import Testimonial from '/components/Testimonial'
+// import { MdOutlineCloudUpload } from "react-icons/md";
 
 
 function App() {
@@ -78,6 +79,17 @@ function App() {
           title='Easy Deployment'
           text='Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.'
         ></Card>
+      </section>
+
+      <section className='testimonial'>
+        <h2 className='section-title'>Testimonial</h2>
+        <h3>Reduce your window's size to see mobile version!</h3>
+        <Testimonial
+          img={myPicture}
+          text='I am a fullstack developer focused on making apps for small organizations that anyone can use right away.'
+          name='Octavio Camacho'
+          position='Fullstack Developer'
+        ></Testimonial>
       </section>
     </>
   )

@@ -22,7 +22,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.75625rem;
+  font-size: 3.5rem;
 }
 
 h3 {
@@ -68,7 +68,6 @@ div.badges-container {
 }
 
 div.badge {
-  margin: 0;
   padding: 0.125rem 0.75rem;
   background-color: white;
   display: inline-block;
@@ -203,6 +202,24 @@ div.neutral > div.banner-content > span.text {
 section.card {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
+}
+
+div.card {
+  margin-top: 3rem;
+  background-color: #F9FAFB;
+  width: 24rem;
+  height: 13rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+div.card:hover {
+  box-shadow: 0px 4px 25px 0px #0000001A;
 }
 
 div.card-icon-container {
@@ -215,10 +232,44 @@ div.card-icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(-3.4rem);
+  box-shadow: 0px 10px 15px -3px #0000001A; 
 }
 
 svg.card-icon {
   width: 1.5rem;
   height: 1.5rem;
 }
+
+div.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.card-content > span.title {
+  font-family: "Inter", sans-serif;
+  color: #111827;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  transform: translateY(-1.4rem);
+}
+
+div.card-content > span.text {
+  font-family: "Inter", sans-serif;
+  color: #6B7280;
+  line-height: 1.5rem;
+  text-align: center;
+  transform: translateY(-1.4rem);
+}
 /***** Card *****/
+
+
+/***** Testimonial *****/
+section.testimonial {
+  margin-top: 3rem;
+}
+
+/***** Testimonial *****/

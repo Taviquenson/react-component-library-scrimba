@@ -5,11 +5,6 @@ export default function Card({
     iconBackgroundColor='#3F75FE',
     ...rest
 }) {
-    // const iconStyles = {
-    //     backgroundColor: rest.backgroundColor,
-        
-    // }
-
     const hasIcon = Object.keys(rest).includes(jsxIcon)
     const hasBackground = Object.keys(rest).includes(iconBackgroundColor)
 
@@ -22,7 +17,14 @@ export default function Card({
                                                             iconBackgroundColor}}>
                 {hasIcon ? rest.jsxIcon : jsxIcon}
             </div>
-            
+            <div className="card-content">
+                <span className="title">
+                    {rest.title}
+                </span>
+                <span className="text">
+                    {rest.text}
+                </span>
+            </div>
         </div>
     )
 }
