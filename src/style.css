@@ -249,7 +249,6 @@ div.card-content {
 }
 
 div.card-content > span.title {
-  font-family: "Inter", sans-serif;
   color: #111827;
   font-weight: 500;
   font-size: 1.125rem;
@@ -258,7 +257,6 @@ div.card-content > span.title {
 }
 
 div.card-content > span.text {
-  font-family: "Inter", sans-serif;
   color: #6B7280;
   line-height: 1.5rem;
   text-align: center;
@@ -270,6 +268,57 @@ div.card-content > span.text {
 /***** Testimonial *****/
 section.testimonial {
   margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+div.testimonial {
+  width: 23.5rem;
+  background-color: #2545B8; 
+  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 15%, #2545B8 15%, #2545B8 100%);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+div.testimonial > img {
+  width: 21.5rem;
+  height: 12.875rem;
+  object-fit: contain;
+  /* object-position: 50% 50%; */
+  background-color: #F0EDEB;
+  border-radius: 12px;
+}
+
+div.testimonial > svg {
+  margin-top: 3rem;
+  font-size: 3rem;
+  color: #FFFFFF40;
+}
+
+div.testimonial > span {
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: #ffffff;
+}
+
+div.testimonial > span.text {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+div.testimonial > span.name {
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+
+div.testimonial > span.position {
+  margin-bottom: 3rem;
+}
+
+
 
 /***** Testimonial *****/
