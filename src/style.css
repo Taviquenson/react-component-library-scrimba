@@ -267,11 +267,15 @@ div.card-content > span.text {
 
 /***** Testimonial *****/
 section.testimonial {
-  margin-top: 3rem;
+  margin: 3rem 0 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+section.testimonial > h3 {
+    margin-bottom: 1rem;
+  }
 
 div.testimonial {
   width: 23.5rem;
@@ -279,7 +283,6 @@ div.testimonial {
   background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 15%, #2545B8 15%, #2545B8 100%);
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
   padding: 1rem;
 }
 
@@ -287,38 +290,75 @@ div.testimonial > img {
   width: 21.5rem;
   height: 12.875rem;
   object-fit: contain;
-  /* object-position: 50% 50%; */
   background-color: #F0EDEB;
   border-radius: 12px;
 }
 
-div.testimonial > svg {
+div.testimonial-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+div.testimonial-contents > svg {
   margin-top: 3rem;
   font-size: 3rem;
   color: #FFFFFF40;
 }
 
-div.testimonial > span {
+div.testimonial-contents > span {
   font-weight: 500;
   line-height: 1.5rem;
   color: #ffffff;
 }
 
-div.testimonial > span.text {
+div.testimonial-contents > span.text {
   margin-top: 1.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-div.testimonial > span.name {
+div.testimonial-contents > span.name {
   margin-top: 1.5rem;
   font-weight: 700;
 }
 
-div.testimonial > span.position {
+div.testimonial-contents > span.position {
   margin-bottom: 3rem;
 }
 
+/***** Testimonial media query *****/
+@media (min-width: 700px) {
+  section.testimonial {
+    margin-bottom: 6rem;
+  }
 
+  section.testimonial > h3 {
+    margin-bottom: 3rem;
+  }
 
+  div.testimonial {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    width: 84.875rem;
+    height: 25rem;
+    background-image: none;
+    margin: 0 3rem;
+  }
+
+  div.testimonial > img {
+    height: 29rem;
+    width: 24rem;
+    object-fit: cover;
+    margin-left: 4rem;
+    transform: translateY(-1.8rem);
+  }
+
+  div.testimonial-contents {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+}
+/***** Testimonial media query *****/
 /***** Testimonial *****/
